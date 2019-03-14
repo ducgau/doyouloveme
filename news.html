@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h3>Do you love me?</h3>
+<input id="yes" value="YES" type="button" onclick="alert('you right')">
+<input id="no" value="NO" type="button" onmouseover="change()" style="position: relative"  >
+<body>
+<script>
+    function change() {
+        var c=window.innerHeight;
+        var d=window.innerWidth;
+        var a=Math.random()*c;
+        var b=Math.random()*d;
+        document.getElementById('no').style.left=a+'px';
+        document.getElementById('no').style.top =b+'px';
+    }
+</script>
+</body>
+</html>
